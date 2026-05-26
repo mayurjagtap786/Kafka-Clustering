@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: kafka-consumer
+  kafka:
+    consumer:
+      bootstrap-servers:
+        - localhost:9092
+      properties:
+        schema:
+          registry:
+            url: http://localhost:8081
+        specific:
+          avro:
+            reader: "true"
+#        spring:
+#          json:
+#            trusted:
+#              packages: "*"
